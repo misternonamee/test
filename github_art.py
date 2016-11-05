@@ -52,9 +52,9 @@ def main():
 
                 update_day = (start_day + datetime.timedelta(days=cnt)).ctime()
                 subprocess.call(['git', 'add', '-A'])
-                subprocess.call(['git', 'commit', '-m', '"update"', '--date', update_day])
+                subprocess.call(['git', 'commit', '-am', '"update"', '--date', update_day])
 
-                cnt += 1
+            cnt += 1
 
     print("Done")
 
